@@ -35,8 +35,8 @@ export const initWobble = (scene, camera, renderer) => {
     uSimplexIterations: new Uniform(0),
     uPositionFrequency: new Uniform(0),
     uSimplexFrequency: new Uniform(0.25),
-    uStartColor: new Uniform(new Color(115 / 255, 255 / 255, 77 / 255)),
-    uEndColor: new Uniform(new Color(255 / 255, 28 / 255, 28 / 255)),
+    uStartColor: new Uniform(new Color("#25451c")),
+    uEndColor: new Uniform(new Color("#1a255b")),
     uRoughnessFactor: new Uniform(1),
     uMetalnessFactor: new Uniform(0.18),
   };
