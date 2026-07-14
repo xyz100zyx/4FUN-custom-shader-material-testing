@@ -37,6 +37,8 @@ export const initWobble = (scene, camera, renderer) => {
     uSimplexFrequency: new Uniform(0.25),
     uStartColor: new Uniform(new Color(115 / 255, 255 / 255, 77 / 255)),
     uEndColor: new Uniform(new Color(255 / 255, 28 / 255, 28 / 255)),
+    uRoughnessFactor: new Uniform(1),
+    uMetalnessFactor: new Uniform(0.18),
   };
 
   const material = new CSM({
@@ -44,12 +46,6 @@ export const initWobble = (scene, camera, renderer) => {
 
     uniforms,
 
-    metalness: 0,
-    roughness: 0.5,
-    color: "#ffffff",
-    transmission: 0,
-    ior: 1.5,
-    thickness: 1.5,
     transparent: true,
     wireframe: false,
     castShadowNode: true,
